@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace lesson2
 {
@@ -124,7 +125,18 @@ namespace lesson2
          * «Хорошим» называется число, которое делится на сумму своих цифр.
          * Реализовать подсчёт времени выполнения программы, используя структуру DateTime.
          */
-        private static int SumsOfNumsDigits(int a)
+
+        private static int RecSumOfNumsDigits(int a)//1:13
+        {
+            if (a == 0)
+            {
+                return a;
+            }
+
+            return RecSumOfNumsDigits(a / 10) + a % 10;
+        }
+        
+        private static int SumOfNumsDigits(int a)//0:36
         {
             var sum = 0;
             while (a != 0)
@@ -142,7 +154,7 @@ namespace lesson2
             var time1 = DateTime.Now;
             for (var i = 1; i < 1000000000; i++)
             {
-                if (i % SumsOfNumsDigits(i) == 0)
+                if (i % RecSumOfNumsDigits(i) == 0)
                 {
                     count++;
                 }
@@ -185,7 +197,7 @@ namespace lesson2
             //6
             GoodNums();
             //7
-            Console.WriteLine(RecSumOfNums(2, 4));
+            //Console.WriteLine(RecSumOfNums(2, 4));
         }
     }
 }
