@@ -167,7 +167,7 @@ namespace lesson2
         public static void Main(string[] args)
         {
             //1
-            /*Console.WriteLine(GreatestOfThree(int.Parse(Console.ReadLine() ?? throw new InvalidOperationException()),
+            Console.WriteLine(GreatestOfThree(int.Parse(Console.ReadLine() ?? throw new InvalidOperationException()),
                 int.Parse(Console.ReadLine() ?? throw new InvalidOperationException()),
                 int.Parse(Console.ReadLine() ?? throw new InvalidOperationException())));
             Console.WriteLine("<....>");
@@ -182,7 +182,7 @@ namespace lesson2
             Console.WriteLine("Введите сначала массу, а затем рост");
             BMI(double.Parse(Console.ReadLine() ?? throw new InvalidOperationException()),
                 double.Parse(Console.ReadLine() ?? throw new InvalidOperationException()));
-            //6*/
+            //6
             GoodNums();
             //7
             Console.WriteLine(RecSumOfNums(2, 4));
