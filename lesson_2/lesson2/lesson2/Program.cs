@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Xml.Serialization.Configuration;
 
 namespace lesson2
 {
@@ -141,7 +140,7 @@ namespace lesson2
         {
             var count = 0;
             var time1 = DateTime.Now;
-            for (var i = 1; i < 10000000; i++)
+            for (var i = 1; i < 1000000000; i++)
             {
                 if (i % SumsOfNumsDigits(i) == 0)
                 {
@@ -149,7 +148,7 @@ namespace lesson2
                 }
             }
             var time2 = DateTime.Now;
-            Console.WriteLine($"Количество хороших чисел: {count}. Время выполнения программы: {(time2 - time1).Milliseconds} милисекунд");
+            Console.WriteLine($"Количество хороших чисел: {count}. Время выполнения программы: {(time2 - time1)}");
         }
 
         /*
@@ -168,7 +167,7 @@ namespace lesson2
         public static void Main(string[] args)
         {
             //1
-            Console.WriteLine(GreatestOfThree(int.Parse(Console.ReadLine() ?? throw new InvalidOperationException()),
+            /*Console.WriteLine(GreatestOfThree(int.Parse(Console.ReadLine() ?? throw new InvalidOperationException()),
                 int.Parse(Console.ReadLine() ?? throw new InvalidOperationException()),
                 int.Parse(Console.ReadLine() ?? throw new InvalidOperationException())));
             Console.WriteLine("<....>");
@@ -183,7 +182,7 @@ namespace lesson2
             Console.WriteLine("Введите сначала массу, а затем рост");
             BMI(double.Parse(Console.ReadLine() ?? throw new InvalidOperationException()),
                 double.Parse(Console.ReadLine() ?? throw new InvalidOperationException()));
-            //6
+            //6*/
             GoodNums();
             //7
             Console.WriteLine(RecSumOfNums(2, 4));
