@@ -154,7 +154,7 @@ namespace lesson2
             var time1 = DateTime.Now;
             for (var i = 1; i < 1000000000; i++)
             {
-                if (i % RecSumOfNumsDigits(i) == 0)
+                if (i % SumOfNumsDigits(i) == 0)
                 {
                     count++;
                 }
@@ -164,16 +164,12 @@ namespace lesson2
         }
 
         /*
-         * 6.a) Разработать рекурсивный метод, который выводит на экран числа от a до b(a<b).
+         * 7.a) Разработать рекурсивный метод, который выводит на экран числа от a до b(a<b).
            б) *Разработать рекурсивный метод, который считает сумму чисел от a до b.
          */
         private static int RecSumOfNums(int a, int b)
         {
-            if (a >= b)
-            {
-                return a;
-            }
-            return a + RecSumOfNums(a + 1, b);
+            return a >= b ? a : a + RecSumOfNums(a + 1, b);
         }
         
         public static void Main(string[] args)
@@ -197,7 +193,7 @@ namespace lesson2
             //6
             GoodNums();
             //7
-            //Console.WriteLine(RecSumOfNums(2, 4));
+            Console.WriteLine(RecSumOfNums(1, 4));
         }
     }
 }
