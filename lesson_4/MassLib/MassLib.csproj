@@ -4,11 +4,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{608E8175-4CA5-483C-81F2-9891DB44C6E7}</ProjectGuid>
-        <OutputType>Exe</OutputType>
+        <ProjectGuid>{C2DFF913-F996-4A3E-BB72-E3046DB6A3B7}</ProjectGuid>
+        <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>lesson_4</RootNamespace>
-        <AssemblyName>lesson_4</AssemblyName>
+        <RootNamespace>MassLib</RootNamespace>
+        <AssemblyName>MassLib</AssemblyName>
         <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -38,18 +38,8 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Program.cs" />
+        <Compile Include="Task3.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <Content Include="account.txt" />
-      <Content Include="data.txt" />
-    </ItemGroup>
-    <ItemGroup>
-      <ProjectReference Include="..\MassLib\MassLib.csproj">
-        <Project>{c2dff913-f996-4a3e-bb72-e3046db6a3b7}</Project>
-        <Name>MassLib</Name>
-      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,6 @@
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\MassLib\bin\Debug\MassLib.dll
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\MassLib\bin\Debug\MassLib.pdb
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\MassLib\obj\Debug\MassLib.csprojAssemblyReference.cache
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\MassLib\obj\Debug\MassLib.csproj.CoreCompileInputs.cache
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\MassLib\obj\Debug\MassLib.dll
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\MassLib\obj\Debug\MassLib.pdb

@@ -1,0 +1,9 @@
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\lesson_4\bin\Debug\lesson_4.exe
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\lesson_4\bin\Debug\lesson_4.pdb
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\lesson_4\obj\Debug\lesson_4.csprojAssemblyReference.cache
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\lesson_4\obj\Debug\lesson_4.csproj.CoreCompileInputs.cache
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\lesson_4\obj\Debug\lesson_4.exe
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\lesson_4\obj\Debug\lesson_4.pdb
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\lesson_4\bin\Debug\MassLib.dll
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\lesson_4\bin\Debug\MassLib.pdb
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\lesson_4\obj\Debug\lesson_4.csproj.CopyComplete
