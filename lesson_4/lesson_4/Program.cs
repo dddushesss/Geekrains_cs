@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using MassLib;
+using TwoDimensionMass;
 
 namespace lesson_4
 {
@@ -145,8 +146,65 @@ namespace lesson_4
 
         #endregion
 
+        #region Task3
+
+        /*
+        * а) Дописать класс для работы с одномерным массивом.
+        * Реализовать конструктор, создающий массив определенного размера
+        * и заполняющий массив числами от начального значения с заданным шагом.
+        * Создать свойство Sum, которое возвращает сумму элементов массива, метод Inverse,
+        * возвращающий новый массив с измененными знаками у всех элементов массива (старый массив, остается без изменений),
+        * метод Multi, умножающий каждый элемент массива на определённое число,
+        * свойство MaxCount, возвращающее количество максимальных элементов. 
+        * б)** Создать библиотеку содержащую класс для работы с массивом.
+        * Продемонстрировать работу библиотеки
+         * е) *** Подсчитать частоту вхождения каждого элемента в массив (коллекция Dictionary<int,int>)
+        * Павлов Алексей
+        */
+
+        private static void Task3()
+        {
+            var mass = new Task3(20, 10, 4);
+            Console.WriteLine("Задание 3. Дан массив: ");
+            foreach (var num in mass.Mass)
+            {
+                Console.Write($"{num} ");
+            }
+
+            Console.WriteLine($"\nСумма: {mass.Sum} Колличество максимальых элементов {mass.MaxCount}");
+            Console.ReadKey();
+            Console.WriteLine("Каждый элемент меняет знак:");
+            foreach (var num in mass.Inverse())
+            {
+                Console.Write($"{num} ");
+            }
+
+            mass.Multi(2);
+            Console.ReadKey();
+            Console.WriteLine("\nКаждый элемент массива умножается на 2:");
+            foreach (var num in mass.Mass)
+            {
+                Console.Write($"{num} ");
+            }
+
+            Console.ReadKey();
+            Console.WriteLine("\n");
+            foreach (var key in mass.dic)
+            {
+                Console.WriteLine($"{key.Key} - {key.Value} штук");
+            }
+        }
+
+        #endregion
+
         #region Task4
 
+        /*
+         * Решить задачу с логинами из урока 2, только логины
+         * и пароли считать из файла в массив. Создайте структуру Account,
+         * содержащую Login и Password.
+         * Павлов Алексей
+         */
         struct Account
         {
             public Dictionary<string, string> LogPass;
@@ -213,6 +271,36 @@ namespace lesson_4
 
         #endregion
 
+        #region Task5
+        
+        /*
+         * *а) Реализовать библиотеку с классом для работы с двумерным массивом.
+         * Реализовать конструктор, заполняющий массив случайными числами.
+         * Создать методы, которые возвращают сумму всех элементов массива,
+         * сумму всех элементов массива больше заданного,
+         * свойство, возвращающее минимальный элемент массива, свойство,
+         * возвращающее максимальный элемент массива, метод,
+         * возвращающий номер максимального элемента массива
+         * (через параметры, используя модификатор ref или out).
+         * 
+         * **б) Добавить конструктор и методы,
+         * которые загружают данные из файла и записывают данные в файл.
+         * 
+         * **в) Обработать возможные исключительные ситуации при работе с файлами.
+         * Павлов Алексей
+         */
+
+        private static void Task5()
+        {
+            var rnd = new Random();
+            var mass = new TwoDimensionMassClass("..\\..\\mass.txt");
+            Console.WriteLine($"Наибольшее - {mass.Max}, наименьшее {mass.Min}, сумма всех элементов - {mass.Sum()}, сумма всех элементов > 5 - {mass.SumOfNumMoreThen(5)}, индекс максимального элемента - [{mass.IndexOfMax()[0]}, {mass.IndexOfMax()[1]}]");
+            mass.Mass[0, 0] = rnd.Next(-2000, 2000);
+            mass.Save("..\\..\\mass.txt");
+        }
+        
+        #endregion
+
         public static void Main(string[] args)
         {
             Task1();
@@ -221,36 +309,13 @@ namespace lesson_4
             Task2();
             Console.ReadKey();
             Console.Clear();
-            var mass = new Task3(20, 10, 4);
-            Console.WriteLine("Задание 3. Дан массив: ");
-            foreach (var num in mass.Mass)
-            {
-                Console.Write($"{num} ");
-            }
-
-            Console.WriteLine($"\nСумма: {mass.Sum} Колличество максимальых элементов {mass.MaxCount}");
-            Console.WriteLine("Каждый элемент меняет знак:");
-            foreach (var num in mass.Inverse())
-            {
-                Console.Write($"{num} ");
-            }
-
-            mass.Multi(2);
-            Console.WriteLine("\nКаждый элемент массива умножается на 2:");
-            foreach (var num in mass.Mass)
-            {
-                Console.Write($"{num} ");
-            }
-
-            Console.WriteLine("\n");
-            foreach (var key in mass.dic)
-            {
-                Console.WriteLine($"{key.Key} - {key.Value} штук");
-            }
-
+            Task3();
             Console.ReadKey();
             Console.Clear();
             Task4();
+            Console.ReadKey();
+            Console.Clear();
+            Task5();
         }
     }
 }

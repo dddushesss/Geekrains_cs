@@ -38,7 +38,13 @@ namespace MassLib
             {
                 get
                 {
-                    return Mass.Sum();
+                    int sum = 0;
+                    foreach (var num in Mass)
+                    {
+                        sum += num;
+                    }
+
+                    return sum;
                 }
             }
 
