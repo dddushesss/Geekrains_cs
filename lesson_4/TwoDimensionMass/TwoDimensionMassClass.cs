@@ -89,9 +89,8 @@ namespace TwoDimensionMass
             }
         }
 
-        public int[] IndexOfMax()
+        public void IndexOfMax(ref int xMax, ref int yMax)
         {
-            var maxIndex = new[] {-1, -1};
             var max = int.MinValue;
             for (var i = 0; i < x; i++)
             {
@@ -100,13 +99,11 @@ namespace TwoDimensionMass
                     if (max < Mass[i, j])
                     {
                         max = Mass[i, j];
-                        maxIndex[0] = i;
-                        maxIndex[1] = j;
+                        xMax = i;
+                        yMax = j;
                     }
                 }
             }
-
-            return maxIndex;
         }
 
         public void Save(string filename)

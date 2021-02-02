@@ -294,7 +294,10 @@ namespace lesson_4
         {
             var rnd = new Random();
             var mass = new TwoDimensionMassClass("..\\..\\mass.txt");
-            Console.WriteLine($"Наибольшее - {mass.Max}, наименьшее {mass.Min}, сумма всех элементов - {mass.Sum()}, сумма всех элементов > 5 - {mass.SumOfNumMoreThen(5)}, индекс максимального элемента - [{mass.IndexOfMax()[0]}, {mass.IndexOfMax()[1]}]");
+            var xMax = 0;
+            var yMax = 0;
+            mass.IndexOfMax(ref xMax, ref yMax);
+            Console.WriteLine($"Наибольшее - {mass.Max}, наименьшее {mass.Min}, сумма всех элементов - {mass.Sum()}, сумма всех элементов > 5 - {mass.SumOfNumMoreThen(5)}, индекс максимального элемента - [{xMax}, {yMax}]");
             mass.Mass[0, 0] = rnd.Next(-2000, 2000);
             mass.Save("..\\..\\mass.txt");
         }
@@ -303,7 +306,7 @@ namespace lesson_4
 
         public static void Main(string[] args)
         {
-            Task1();
+            /*Task1();
             Console.ReadKey();
             Console.Clear();
             Task2();
@@ -314,7 +317,7 @@ namespace lesson_4
             Console.Clear();
             Task4();
             Console.ReadKey();
-            Console.Clear();
+            Console.Clear();*/
             Task5();
         }
     }
