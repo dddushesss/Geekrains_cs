@@ -306,7 +306,7 @@ namespace lesson_4
 
         public static void Main(string[] args)
         {
-            /*Task1();
+            Task1();
             Console.ReadKey();
             Console.Clear();
             Task2();
@@ -317,7 +317,7 @@ namespace lesson_4
             Console.Clear();
             Task4();
             Console.ReadKey();
-            Console.Clear();*/
+            Console.Clear();
             Task5();
         }
     }
