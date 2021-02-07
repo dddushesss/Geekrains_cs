@@ -5,11 +5,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{B47358C8-E5D2-4E43-978E-95F48516C286}</ProjectGuid>
+        <ProjectGuid>{F85FCE8D-4F48-48C8-97C7-FB00C2F3786C}</ProjectGuid>
         <OutputType>Exe</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>lesson_5</RootNamespace>
-        <AssemblyName>lesson_5</AssemblyName>
+        <RootNamespace>lesson_6</RootNamespace>
+        <AssemblyName>lesson_6</AssemblyName>
         <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
