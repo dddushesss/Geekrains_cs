@@ -1,0 +1,6 @@
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\TwoDimensionMass\bin\Debug\TwoDimensionMass.dll
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\TwoDimensionMass\bin\Debug\TwoDimensionMass.pdb
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\TwoDimensionMass\obj\Debug\TwoDimensionMass.csprojAssemblyReference.cache
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\TwoDimensionMass\obj\Debug\TwoDimensionMass.csproj.CoreCompileInputs.cache
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\TwoDimensionMass\obj\Debug\TwoDimensionMass.dll
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_4\TwoDimensionMass\obj\Debug\TwoDimensionMass.pdb
