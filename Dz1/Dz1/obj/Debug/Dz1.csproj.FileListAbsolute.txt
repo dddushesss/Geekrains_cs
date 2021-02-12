@@ -1,6 +1,0 @@
-C:\Users\alex1\RiderProjects\Dz1\Dz1\bin\Debug\Dz1.exe
-C:\Users\alex1\RiderProjects\Dz1\Dz1\bin\Debug\Dz1.pdb
-C:\Users\alex1\RiderProjects\Dz1\Dz1\obj\Debug\Dz1.csprojAssemblyReference.cache
-C:\Users\alex1\RiderProjects\Dz1\Dz1\obj\Debug\Dz1.csproj.CoreCompileInputs.cache
-C:\Users\alex1\RiderProjects\Dz1\Dz1\obj\Debug\Dz1.exe
-C:\Users\alex1\RiderProjects\Dz1\Dz1\obj\Debug\Dz1.pdb
