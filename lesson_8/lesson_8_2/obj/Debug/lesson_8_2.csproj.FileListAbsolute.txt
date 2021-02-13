@@ -1,0 +1,9 @@
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_2\bin\Debug\lesson_8_2.exe.config
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_2\bin\Debug\lesson_8_2.exe
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_2\bin\Debug\lesson_8_2.pdb
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_2\obj\Debug\lesson_8_2.Form1.resources
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_2\obj\Debug\lesson_8_2.Properties.Resources.resources
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_2\obj\Debug\lesson_8_2.csproj.GenerateResource.cache
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_2\obj\Debug\lesson_8_2.csproj.CoreCompileInputs.cache
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_2\obj\Debug\lesson_8_2.exe
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_2\obj\Debug\lesson_8_2.pdb
