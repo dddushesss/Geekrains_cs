@@ -7,3 +7,4 @@ C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_5\obj\Debug\lesso
 C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_5\obj\Debug\lesson_8_5.csproj.CoreCompileInputs.cache
 C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_5\obj\Debug\lesson_8_5.exe
 C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_5\obj\Debug\lesson_8_5.pdb
+C:\Users\alex1\Documents\GitHub\Geekrains_cs\lesson_8\lesson_8_5\obj\Debug\lesson_8_5.csprojAssemblyReference.cache

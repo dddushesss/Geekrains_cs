@@ -46,7 +46,7 @@ namespace lesson_8_5
             if(sfd != null && ofd != null)
             {
                 List<Student> students = new List<Student>();
-                var fstream = new StreamReader(ofd.FileName);
+                var fstream = new StreamReader(ofd.FileName, Encoding.UTF8);
                 int a = 0;
                 while (!fstream.EndOfStream)
                 {
@@ -60,6 +60,7 @@ namespace lesson_8_5
                 Stream fStream = new FileStream(sfd.FileName, FileMode.Create, FileAccess.Write);
                 xmlFormat.Serialize(fStream, students);
                 fStream.Close();
+                MessageBox.Show("Ковертация прошла успешно", "Результат", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
